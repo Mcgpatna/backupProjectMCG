@@ -25,6 +25,7 @@
 	<td>Category Name</td>
 	<td><input type="text" id="catname" name="catname" value="${categoryInfo.categoryName}"/></td>
 </tr>
+<tr>
 	<td>Category Desc</td>
 	<td><input type="text" id="catdesc" name="catdesc" value="${categoryInfo.categoryDescript}"/></td>
 </tr>

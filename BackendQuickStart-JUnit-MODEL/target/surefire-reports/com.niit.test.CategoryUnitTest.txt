@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.niit.test.CategoryUnitTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.499 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.51 sec

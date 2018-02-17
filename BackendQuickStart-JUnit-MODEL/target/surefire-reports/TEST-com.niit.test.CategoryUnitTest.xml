@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.niit.test.CategoryUnitTest" time="3.199" errors="0" skipped="4">
+<testsuite failures="0" time="3.171" errors="0" skipped="4" tests="5" name="com.niit.test.CategoryUnitTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin"/>
-    <property name="java.vm.version" value="25.45-b02"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_11\jre\bin"/>
+    <property name="java.vm.version" value="23.6-b04"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\dt workspace\BackendQuickStart-JUnit-MODEL"/>
+    <property name="maven.multiModuleProjectDirectory" value="K:\mcg\DT\BackendQuickStart-JUnit-MODEL"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="IN"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\dt workspace\BackendQuickStart-JUnit-MODEL"/>
-    <property name="java.runtime.version" value="1.8.0_45-b15"/>
+    <property name="user.dir" value="K:\mcg\DT\BackendQuickStart-JUnit-MODEL"/>
+    <property name="java.runtime.version" value="1.7.0_11-b21"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_11\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\ADMIN\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="E:\dt workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4451441000599522448.tmp"/>
+    <property name="os.name" value="Windows 8"/>
+    <property name="classworlds.conf" value="K:\mcg\DT\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6056636358936464196.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\ProgramData\Oracle\Java\javapath;c:\oracle\product\10.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Java\jdk1.7.0_11\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Skype\Phone\;E:\apache-maven-3.3.9\bin;C:\Program Files (x86)\Brackets\command;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\oracle\product\10.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_11\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python36\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.3"/>
+    <property name="os.version" value="6.2"/>
     <property name="user.home" value="C:\Users\ADMIN"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="Admin"/>
     <property name="java.class.path" value="/C:/Program Files/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.3.20160209-1444/jars/plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_45\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_11\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_45"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes"/>
+    <property name="java.version" value="1.7.0_11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_11\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_11\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_11\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_11\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_11\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_11\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_11\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_11\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_11\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="E:\dt workspace\BackendQuickStart-JUnit-MODEL\EMBEDDED"/>
+    <property name="maven.home" value="K:\mcg\DT\BackendQuickStart-JUnit-MODEL\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.niit.test.CategoryUnitTest" name="deletingCategoryTest" time="1.293">
+  <testcase time="1.356" classname="com.niit.test.CategoryUnitTest" name="deletingCategoryTest">
     <skipped/>
     <system-out>--------&gt;  Data Source is now operational  &lt;---------
  * * * * * Session Factory Bean or better to call &apos;the Spring Container&apos; has just been initalized * * * * * 
@@ -71,88 +71,88 @@
 +++++ Do database manipulation of Cart Model as CartDAO has been enabled now!! +++++
 +++++ Do database manipulation of Supplier Model as SupplierDAO has been enabled now!! +++++
 (   (  ( (Transaction Tunnel has been opened for a Synchronized committed transaction with the H2 Database) )  )   )
- We are inside Before Class intantiated object!!com.niit.dao.CategoryDAOImplement@3efe7086
+ We are inside Before Class intantiated object!!com.niit.dao.CategoryDAOImplement@204d6e7b
 </system-out>
-    <system-err>Feb 16, 2018 4:02:45 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@326de728: startup date [Fri Feb 16 16:02:45 IST 2018]; root of context hierarchy
-Feb 16, 2018 4:02:45 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
-INFO: Overriding bean definition for bean &apos;categoryDAO&apos; with a different definition: replacing [Generic bean: class [com.niit.dao.CategoryDAOImplement]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\dt workspace\BackendQuickStart-JUnit-MODEL\target\classes\com\niit\dao\CategoryDAOImplement.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=DBConfig; factoryMethodName=getCategoryDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.DBConfig]
-Feb 16, 2018 4:02:46 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+    <system-err>Feb 17, 2018 4:14:11 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f432acf: startup date [Sat Feb 17 16:14:11 IST 2018]; root of context hierarchy
+Feb 17, 2018 4:14:11 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean &apos;categoryDAO&apos; with a different definition: replacing [Generic bean: class [com.niit.dao.CategoryDAOImplement]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [K:\mcg\DT\BackendQuickStart-JUnit-MODEL\target\classes\com\niit\dao\CategoryDAOImplement.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=DBConfig; factoryMethodName=getCategoryDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.DBConfig]
+Feb 17, 2018 4:14:11 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
 INFO: Loaded JDBC driver: org.h2.Driver
-Feb 16, 2018 4:02:46 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+Feb 17, 2018 4:14:11 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
 INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-Feb 16, 2018 4:02:46 PM org.hibernate.Version logVersion
+Feb 17, 2018 4:14:11 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {4.3.5.Final}
-Feb 16, 2018 4:02:46 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+Feb 17, 2018 4:14:11 PM org.hibernate.cfg.Environment &lt;clinit&gt;
 INFO: HHH000206: hibernate.properties not found
-Feb 16, 2018 4:02:46 PM org.hibernate.cfg.Environment buildBytecodeProvider
+Feb 17, 2018 4:14:11 PM org.hibernate.cfg.Environment buildBytecodeProvider
 INFO: HHH000021: Bytecode provider name : javassist
-Feb 16, 2018 4:02:46 PM org.hibernate.dialect.Dialect &lt;init&gt;
+Feb 17, 2018 4:14:11 PM org.hibernate.dialect.Dialect &lt;init&gt;
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-Feb 16, 2018 4:02:46 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+Feb 17, 2018 4:14:12 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
 INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
-Feb 16, 2018 4:02:46 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000228: Running hbm2ddl schema update
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000102: Fetching database metadata
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000396: Updating schema
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.CART
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
-INFO: HHH000037: Columns: [quantity, productid, price, cartid, productname]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [price, cartid, productid, quantity, productname]
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_1]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.CATEGORY
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
-INFO: HHH000037: Columns: [categorydescript, categoryname, categoryid]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [categoryid, categoryname, categorydescript]
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_3]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.CUSTOMER
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
-INFO: HHH000037: Columns: [customeremail, customercountry, customerlname, customerstate, customerid, customeraddress, customermobile, customercity, customerfname]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [customeremail, customerfname, customercountry, customerid, customerlname, customerstate, customercity, customeraddress, customermobile]
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_5]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.PRODUCT
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
-INFO: HHH000037: Columns: [quantity, supplierid, productid, productname, productprice, categoryid, productdesc]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [categoryid, productid, quantity, productdesc, supplierid, productprice, productname]
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_18]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.SUPPLIER
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
-INFO: HHH000037: Columns: [suppliername, supplierid, supplieraddress]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [supplieraddress, suppliername, supplierid]
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_c]
-Feb 16, 2018 4:02:46 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000232: Schema update complete
-Feb 16, 2018 4:02:46 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
-INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@7b139eab] of Hibernate SessionFactory for HibernateTransactionManager
+Feb 17, 2018 4:14:12 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@93bf890] of Hibernate SessionFactory for HibernateTransactionManager
 </system-err>
   </testcase>
-  <testcase classname="com.niit.test.CategoryUnitTest" name="updateCategoryTest" time="1.294">
+  <testcase time="1.356" classname="com.niit.test.CategoryUnitTest" name="updateCategoryTest">
     <skipped/>
   </testcase>
-  <testcase classname="com.niit.test.CategoryUnitTest" name="listCategoriesTest" time="0.204"/>
-  <testcase classname="com.niit.test.CategoryUnitTest" name="gettingCategoryTest" time="0.204">
+  <testcase time="0.153" classname="com.niit.test.CategoryUnitTest" name="listCategoriesTest"/>
+  <testcase time="0.153" classname="com.niit.test.CategoryUnitTest" name="gettingCategoryTest">
     <skipped/>
   </testcase>
-  <testcase classname="com.niit.test.CategoryUnitTest" name="addingCategoryTest" time="0.204">
+  <testcase time="0.153" classname="com.niit.test.CategoryUnitTest" name="addingCategoryTest">
     <skipped/>
   </testcase>
 </testsuite>
