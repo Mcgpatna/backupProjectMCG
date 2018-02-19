@@ -18,8 +18,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.niit.dao.CategoryDAO;
 import com.niit.dao.ProductDAO;
+import com.niit.dao.SupplierDAO;
 import com.niit.model.Category;
 import com.niit.model.Product;
+import com.niit.model.Supplier;
 
 @Controller
 public class ProductController {
@@ -29,12 +31,16 @@ public class ProductController {
 	@Autowired
 	ProductDAO productDAO;
 	
+	@Autowired
+	SupplierDAO supplierDAO;
+	
 	@RequestMapping("/product")
 	public String showProductPage(Model m)
 	{
 		Product product=new Product();
 		m.addAttribute(product);
 		m.addAttribute("catlist",this.listCategories());
+		m.addAttribute("supplist",this.listSupplier());
 		return "Product";	
 	}
 	public LinkedHashMap<Integer,String> listCategories()
@@ -46,6 +52,16 @@ public class ProductController {
 			catlist.put(category.getCategoryId(),category.getCategoryName());
 		}
 		return catlist;
+	}
+	public LinkedHashMap<Integer,String> listSupplier()
+	{
+		List<Supplier> listSupplier=supplierDAO.gettingSupplier();
+		LinkedHashMap<Integer,String> supplist=new LinkedHashMap<Integer,String>();
+		for(Supplier supplier:listSupplier)
+		{
+			supplist.put(supplier.getSupplierId(),supplier.getSupplierName());
+		}
+		return supplist;
 	}
 	@RequestMapping(value="/InsertProduct",method=RequestMethod.POST)
 	public String addProduct(@ModelAttribute("product")Product product,Model m,@RequestParam("pimage") MultipartFile filedet)

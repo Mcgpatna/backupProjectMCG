@@ -23,7 +23,7 @@
 			<img src="<c:url value="/resources/images/${product.productId}.jpg"/>" width="100" height="100"/>
 			<br/>
 			<a href="<c:url value="/productDesc/${product.productId}"/>">${product.productName}</a>
-			<br/>INR. ${product.price} /-
+			<br/>INR. ${product.productPrice} /-
 		</td>
 	
 </c:forEach>

@@ -22,7 +22,7 @@
 	</tr>
 	<tr bgcolor="pink">
 		<td>Price</td>
-		<td>${ProductInfo.price}</td>
+		<td>${ProductInfo.productPrice}</td>
 	</tr>
 	<tr bgcolor="pink">
 		<td>Product Name</td>
@@ -38,7 +38,7 @@
 	</tr>
 	<tr bgcolor="pink">
 		<td>Product Description</td>
-		<td>${ProductInfo.prodDesc}</td>
+		<td>${ProductInfo.productDesc}</td>
 	</tr>
 	<tr>
 		<td>Quantity</td>
