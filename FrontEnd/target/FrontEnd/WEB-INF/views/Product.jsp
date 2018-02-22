@@ -13,7 +13,7 @@
 <h3 align="center">Product Page</h3>
 <form:form action="InsertProduct" modelAttribute="product" enctype="multipart/form-data">
 <table align="center">
-	<tr> <td colspan="2">Product Detail</td></tr>
+	<!-- <tr> <td colspan="2">Product Detail</td></tr> -->
 	<tr> 
 	   <td>Product Name</td>
 	   <td><form:input path="productName"/></td>
@@ -29,7 +29,13 @@
 	</tr>
 	<tr bgcolor="pink">
 		<td> Supplier</td>
-		<td><form:input path="supplierId"/></td>
+		<td>
+		<!-- 	<form:input path="supplierId"/>   -->
+			<form:select path="supplierId">
+				<form:options value="0" label="---Select----"/>
+				<form:options items="${supplist}"/>
+			</form:select>
+		</td>
 	</tr>
 	<tr>
 		<td>Price</td>

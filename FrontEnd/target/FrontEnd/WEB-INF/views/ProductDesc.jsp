@@ -15,7 +15,7 @@
 <table >
 	<tr bgcolor="pink">
 		<td rowspan="6">
-		<img src="<c:url value="/resources/images/${ProductInfo.productId}.jpg"/>" width="200" height="200"/>
+		<img src="<c:url value="/resources/images/${ProductInfo.productId}.jpg"/>" style="width:200%;" height="100"/>
 		</td>
 		<td>Product ID</td>
 		<td>${ProductInfo.productId}</td>
