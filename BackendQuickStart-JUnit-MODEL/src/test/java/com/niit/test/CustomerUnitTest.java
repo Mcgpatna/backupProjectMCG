@@ -12,6 +12,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.niit.dao.CustomerDAO;
 import com.niit.model.Customer;
 
+
 public class CustomerUnitTest 
 {
 
@@ -45,9 +46,13 @@ public class CustomerUnitTest
 	public void addingCustomerTest()
 	{
 				 Customer customer = new Customer();
-				  customer.setCustomerFName("Srinivas");
-				  customer.setCustomerAddress("Hydrabad");
-				  customer.setCustomerEmail("srinivas@gmail.com");
+				  customer.setCustomerFName("Madhu");
+				  customer.setCustomerAddress("Patna");
+				  customer.setCustomerEmail("mcg@gmail.com");
+				  customer.setUsername("madhu");
+				  customer.setPassword("pass@123");
+				  customer.setEnabled(true);
+				  customer.setRole("ADMIN");
 		          assertTrue("Problem in Customer Insertion into the H2 Database", customerDAO.addingCustomer(customer));
 	}
 	

@@ -23,11 +23,12 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 @Configuration
 @ComponentScan("com.niit")
 @EnableTransactionManagement
-
 public class DBConfig 
 {
-    		public DataSource getH2DataSource()
+			@Bean(name="data1")
+			public DataSource getH2DataSource()
     		{
+				System.out.println("inside getH2DataSource()....");
     			DriverManagerDataSource dataSource = new  DriverManagerDataSource();
     			
     			dataSource.setDriverClassName("org.h2.Driver");

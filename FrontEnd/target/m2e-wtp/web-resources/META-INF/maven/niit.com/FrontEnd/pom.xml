@@ -55,12 +55,25 @@
   		<artifactId>BackendQuickStart</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
     </dependency>
-    <!--   <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency> -->
+    <!-- adding security related dependency -->
+    <dependency>
+		<groupId>org.springframework.security</groupId>
+		<artifactId>spring-security-core</artifactId>
+		<version>4.1.2.RELEASE</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.springframework.security</groupId>
+		<artifactId>spring-security-web</artifactId>
+		<version>4.1.2.RELEASE</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework.security</groupId>
+		<artifactId>spring-security-config</artifactId>
+		<version>4.1.2.RELEASE</version>
+	</dependency>
+<!-- end of security dependency -->
   </dependencies>
   <build>
     <finalName>FrontEnd</finalName>

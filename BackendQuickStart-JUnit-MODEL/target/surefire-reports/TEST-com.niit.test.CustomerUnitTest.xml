@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.247" errors="0" skipped="4" tests="5" name="com.niit.test.CustomerUnitTest">
+<testsuite failures="0" time="0.317" errors="0" skipped="3" tests="5" name="com.niit.test.CustomerUnitTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_11\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8"/>
-    <property name="classworlds.conf" value="K:\mcg\DT\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6056636358936464196.tmp"/>
+    <property name="classworlds.conf" value="K:\mcg\DT\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2804203815912307983.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\oracle\product\10.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_11\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python36\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,9 +61,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.235" classname="com.niit.test.CustomerUnitTest" name="deletingCustomerTest">
+  <testcase time="0.25" classname="com.niit.test.CustomerUnitTest" name="deletingCustomerTest">
     <skipped/>
-    <system-out>--------&gt;  Data Source is now operational  &lt;---------
+    <system-out>inside getH2DataSource()....
+--------&gt;  Data Source is now operational  &lt;---------
  * * * * * Session Factory Bean or better to call &apos;the Spring Container&apos; has just been initalized * * * * * 
 +++++ Do database manipulation of Category Model as CatogoryDAO has been enabled now!! +++++
 +++++ Do database manipulation of Product Model as ProductDAO has been enabled now!! +++++
@@ -71,80 +72,78 @@
 +++++ Do database manipulation of Cart Model as CartDAO has been enabled now!! +++++
 +++++ Do database manipulation of Supplier Model as SupplierDAO has been enabled now!! +++++
 (   (  ( (Transaction Tunnel has been opened for a Synchronized committed transaction with the H2 Database) )  )   )
- We are inside Before Class intantiated object!!com.niit.dao.CustomerDAOImplement@d4c86b1
+ We are inside Before Class intantiated object!!com.niit.dao.CustomerDAOImplement@3abda306
 </system-out>
-    <system-err>Feb 17, 2018 4:14:12 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4729e975: startup date [Sat Feb 17 16:14:12 IST 2018]; root of context hierarchy
-Feb 17, 2018 4:14:12 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+    <system-err>Mar 01, 2018 3:28:32 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5b826364: startup date [Thu Mar 01 15:28:32 IST 2018]; root of context hierarchy
+Mar 01, 2018 3:28:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
 INFO: Overriding bean definition for bean &apos;categoryDAO&apos; with a different definition: replacing [Generic bean: class [com.niit.dao.CategoryDAOImplement]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [K:\mcg\DT\BackendQuickStart-JUnit-MODEL\target\classes\com\niit\dao\CategoryDAOImplement.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=DBConfig; factoryMethodName=getCategoryDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.DBConfig]
-Feb 17, 2018 4:14:12 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+Mar 01, 2018 3:28:32 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
 INFO: Loaded JDBC driver: org.h2.Driver
-Feb 17, 2018 4:14:12 PM org.hibernate.dialect.Dialect &lt;init&gt;
+Mar 01, 2018 3:28:32 PM org.hibernate.dialect.Dialect &lt;init&gt;
 INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-Feb 17, 2018 4:14:12 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+Mar 01, 2018 3:28:32 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
 INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
-Feb 17, 2018 4:14:12 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+Mar 01, 2018 3:28:32 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000228: Running hbm2ddl schema update
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000102: Fetching database metadata
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000396: Updating schema
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.CART
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000037: Columns: [price, cartid, productid, quantity, productname]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_1]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.CATEGORY
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000037: Columns: [categoryid, categoryname, categorydescript]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_3]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.CUSTOMER
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
-INFO: HHH000037: Columns: [customeremail, customerfname, customercountry, customerid, customerlname, customerstate, customercity, customeraddress, customermobile]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [enabled, customerfname, customercountry, customerlname, customerstate, customeraddress, password, customermobile, customeremail, username, customerid, customercity, role]
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_5]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.PRODUCT
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000037: Columns: [categoryid, productid, quantity, productdesc, supplierid, productprice, productname]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_18]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000261: Table found: ONLINE.PUBLIC.SUPPLIER
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000037: Columns: [supplieraddress, suppliername, supplierid]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000108: Foreign keys: []
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
 INFO: HHH000126: Indexes: [primary_key_c]
-Feb 17, 2018 4:14:12 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+Mar 01, 2018 3:28:33 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
 INFO: HHH000232: Schema update complete
-Feb 17, 2018 4:14:12 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
-INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@735cfd7c] of Hibernate SessionFactory for HibernateTransactionManager
+Mar 01, 2018 3:28:33 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@42c5d9ca] of Hibernate SessionFactory for HibernateTransactionManager
 </system-err>
   </testcase>
-  <testcase time="0.003" classname="com.niit.test.CustomerUnitTest" name="listCustomersTest"/>
-  <testcase time="0.003" classname="com.niit.test.CustomerUnitTest" name="updateCustomerTest">
+  <testcase time="0.011" classname="com.niit.test.CustomerUnitTest" name="listCustomersTest"/>
+  <testcase time="0.011" classname="com.niit.test.CustomerUnitTest" name="updateCustomerTest">
     <skipped/>
   </testcase>
-  <testcase time="0.003" classname="com.niit.test.CustomerUnitTest" name="gettingCustomerTest">
+  <testcase time="0.011" classname="com.niit.test.CustomerUnitTest" name="gettingCustomerTest">
     <skipped/>
   </testcase>
-  <testcase time="0.003" classname="com.niit.test.CustomerUnitTest" name="addingCustomerTest">
-    <skipped/>
-  </testcase>
+  <testcase time="0.034" classname="com.niit.test.CustomerUnitTest" name="addingCustomerTest"/>
 </testsuite>

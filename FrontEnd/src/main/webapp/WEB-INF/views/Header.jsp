@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,6 +15,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
 </head>
+
 <body>
 
 <!-- <center> 
@@ -35,22 +37,38 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">OnLine Shopping</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/FrontEnd">Home</a></li>
-      <li><a href="supplier">Supplier</a></li>
-      <li><a href="category">Category</a></li>
-      <li><a href="product">Product</a></li>
-      <li><a href="productPage">Product Page</a></li>
-      <!-- <li><a href="login">Login</a></li>
-	  <li><a href="register">Register</a></li> -->
-	  <li><a href="aboutus">About Us</a></li>
-      <li><a href="contactus">Contact Us</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="register"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
-      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
+    <c:if test="${!sessionScope.loggedin}">
+      	<ul class="nav navbar-nav">
+        	<li class="active"><a href="/FrontEnd">Home</a></li>
+       		<li><a href="aboutus">About Us</a></li>
+     	</ul>
+    	<ul class="nav navbar-nav navbar-right">
+      		<li><a href="register"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+      		<li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    	</ul>
+    </c:if>
+    <c:if test="${sessionScope.loggedin}">
+    
+      <c:if test="${sessionScope.role=='ADMIN'}">
+      	<ul class="nav navbar-nav">
+      	<li class="active"><a href="/FrontEnd">Home</a></li>
+      	<li><a href="supplier">Supplier</a></li>
+      	<li><a href="category">Category</a></li>
+      	<li><a href="product">Product</a></li>
+      	<li><a href="contactus">Contact Us</a></li>
+	  	<li><a href="perform_logout">Logout</a>
+    	</ul>
+       </c:if>
+       <c:if test="${sessionScope.role=='USER'}">
+      	<ul class="nav navbar-nav">
+      	<li class="active"><a href="/FrontEnd">Home</a></li>
+      	<li><a href="productPage">Product Page</a></li>
+		<li><a href="contactus">Contact Us</a></li>
+	  	<li><a href="perform_logout">Logout</a>
+    	</ul>
+       </c:if>
+    </c:if>
+      </div>
 </nav>
 
 </center>

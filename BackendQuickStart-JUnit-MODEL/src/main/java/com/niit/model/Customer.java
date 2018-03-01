@@ -13,7 +13,7 @@ public class Customer
 	@Id
 	@GeneratedValue 
 	// 1
-	private int customerId; // for login 
+	private int customerId;  
 	// 2
 	private String customerFName;
 	// 3
@@ -29,7 +29,38 @@ public class Customer
 	// 8
 	private String customerMobile;
 	// 9
-	private String customerEmail;
+	private String customerEmail; 
+	private String username; // for login 
+	private boolean enabled;
+	
+	private String password;
+	private String role;
+	
+	
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public boolean isEnabled() {
+		return enabled;
+	}
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	public int getCustomerId() {
 		return customerId;
 	}

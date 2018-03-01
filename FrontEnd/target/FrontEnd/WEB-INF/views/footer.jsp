@@ -44,9 +44,9 @@
 <div class="container"  style=color:#00aabb >
     <hr/>
         <div class="text-left left-block">
-            <p class="txt-railway"><font face="vivaldi" size="3"><b>About</b></font> 
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="/Flower/index"><font face="vivaldi" size="3"><b>Home </b></font></a></p>
+            <!-- <p class="txt-railway"><font face="Ariel" size="10"><b>About</b></font> 
+            &nbsp;&nbsp;&nbsp;&nbsp; -->
+            <a href="/FrontEnd"><font face="Ariel" size="4"><b>Home </b></font></a></p>
          </div>
          <div class="text-right Right-block" >   
             <br />

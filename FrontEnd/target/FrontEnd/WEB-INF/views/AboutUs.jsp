@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<%-- <%@ include file="Header.jsp" %> --%>
+<%@ include file="Header.jsp" %>
 
 <h3 align="center">About Us Page</h3>
 <!DOCTYPE html>
@@ -40,10 +40,10 @@
   </div>
 </nav> -->
   
-<div class="container">
+<!-- <div class="container">
   <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    Indicators
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -51,7 +51,7 @@
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+    Wrapper for slides
     <div class="carousel-inner">
       <div class="item active">
         <img src="resources\images\image\m3.jpg" alt="Moto G" style="width:200%;">
@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+    Left and right controls
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -80,7 +80,7 @@
     </a>
   </div>
 </div>
-
+ -->
 
 </body>
 </html>
