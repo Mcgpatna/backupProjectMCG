@@ -9,6 +9,6 @@ public interface CartDAO
 				public boolean addingCart(Cart cart);
 				public boolean updatingCart(Cart cart);
 				public Cart gettingCart(int cartId);
-				public List<Cart> gettingCart();
+				public List<Cart> gettingCart(String username);
 				public boolean deletingCart(Cart cart);			
 }

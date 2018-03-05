@@ -40,6 +40,10 @@
 		<td>Product Description</td>
 		<td>${ProductInfo.productDesc}</td>
 	</tr>
+	<td colspan="2">
+	<form action="<c:url value="/addToCart/${ProductInfo.productId}" />" >
+	
+	<table>
 	<tr>
 		<td>Quantity</td>
 		<td>
@@ -51,7 +55,13 @@
 			<option value="5">5</option>
 		</select>
 		</td>
+		<td>
+			<input type="submit" value="AddToCart" class="btn btn-success btn-block"/>
+		</td>
 	</tr>
+	</table>
+	</form>
+	</td>
 </table>
 <jsp:include page="footer.jsp" />
 </body>

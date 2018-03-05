@@ -40,13 +40,17 @@ public class CartUnitTest
 
 	
 // Test 1: ___________ADDING ' SINGLE ' CART_______________
-@Ignore
+//@Ignore
 @Test
 	public void addingCartTest()
 	{
 				 Cart cart = new Cart();
 				  cart.setProductId(1);
 				  cart.setPrice(1000);
+				  cart.setQuantity(2);
+				  cart.setUsername("srinivas");
+				  cart.setPaymentStatus("NP");
+				  cart.setSubtotal(2000);
 		          assertTrue("Problem in Cart Insertion into the H2 Database", cartDAO.addingCart(cart));
 	}
 	
@@ -86,7 +90,7 @@ public void updateCartTest()
 @Test
 public void listCartTest()
 {
-			List<Cart> listCart = cartDAO.gettingCart();
+			List<Cart> listCart = cartDAO.gettingCart("srinivas");
 			assertNotNull("No Cart Exist!!", listCart);
 			
 			for(Cart cart:listCart)
@@ -95,6 +99,8 @@ public void listCartTest()
 				   System.out.print(cart.getProductId() + ":::");
 				   System.out.println(cart.getProductName());
 				   System.out.println(cart.getQuantity());
+				   System.out.println(cart.getPaymentStatus());
+				   System.out.println(cart.getUsername());
 			}
 }
 

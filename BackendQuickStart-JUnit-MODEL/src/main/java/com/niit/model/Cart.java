@@ -22,6 +22,31 @@ public class Cart
 	private int quantity;
 	//5
 	private float price;
+	//6
+	private float subtotal;
+	//7
+	String username;
+	//8
+	String paymentStatus;
+	
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPaymentStatus() {
+		return paymentStatus;
+	}
+	public void setPaymentStatus(String paymentStatus) {
+		this.paymentStatus = paymentStatus;
+	}
+	public float getSubtotal() {
+		return subtotal;
+	}
+	public void setSubtotal(float subtotal) {
+		this.subtotal = subtotal;
+	}
 	// _________________________________________________________________
 	public int getCartId() {
 		return cartId;

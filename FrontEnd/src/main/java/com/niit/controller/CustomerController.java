@@ -1,6 +1,7 @@
 package com.niit.controller;
 
 import java.util.Collection;
+import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
@@ -17,7 +18,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 import com.niit.dao.CustomerDAO;
+import com.niit.dao.ProductDAO;
 import com.niit.model.Customer;
+import com.niit.model.Product;
 
 
 @Controller
@@ -25,6 +28,18 @@ public class CustomerController {
 	
 	@Autowired
 	CustomerDAO customerDAO;
+	
+	@Autowired
+	ProductDAO productDAO;
+	
+	@RequestMapping("/UserHome")
+	public String displayUserHome(Model a)
+	{
+		List<Product> listProduct=productDAO.gettingProducts();
+		
+		a.addAttribute("listProducts", listProduct);
+		return "UserHome";
+	}
 	
 	@RequestMapping(value="/InsertCustomer",method=RequestMethod.POST)
 	public String addCustomer(@ModelAttribute("customer")Customer customer,Model m)

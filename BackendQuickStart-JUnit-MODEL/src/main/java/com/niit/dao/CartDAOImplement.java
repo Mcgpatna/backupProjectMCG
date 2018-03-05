@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -83,11 +84,23 @@ public Cart gettingCart(int cartId)
 
 	// For List<>gettingCarts()
 	@Override
-	public List<Cart> gettingCart() 
+	public List<Cart> gettingCart(String username) 
 	{
-	     Session session = sessionFactory.openSession();
-		Query query = session.createQuery("from Cart");
-		List<Cart> listCarts = (List<Cart>)query.list();
-		return listCarts;
+		
+	     try {
+			Session session = sessionFactory.openSession();
+			String status="NP";
+			Query query = session.createQuery("from Cart where username=:username and paymentstatus=:status");
+			query.setParameter("username", username);
+			query.setParameter("status", status);
+			
+			List<Cart> listCarts = (List<Cart>)query.list();
+			return listCarts;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Error in getting Cart details for user.."+e);
+			return null;
+			
+		}
 	}
 }
