@@ -35,6 +35,7 @@ public class CustomerController {
 	@RequestMapping("/UserHome")
 	public String displayUserHome(Model a)
 	{
+		System.out.println("inside displayUserHome()....");
 		List<Product> listProduct=productDAO.gettingProducts();
 		
 		a.addAttribute("listProducts", listProduct);

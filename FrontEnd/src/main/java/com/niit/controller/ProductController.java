@@ -72,7 +72,7 @@ public class ProductController {
 		
 		//===> Image Uploading	
 		//String imagePath="C:\\S180255\\InteriorFrontend\\src\\main\\webapp\\resources\\images\\";
-		String imagePath="K:\\mcg\\DT\\FrontEnd\\src\\main\\resources\\images\\";
+		String imagePath="K:\\mcg\\DT\\FrontEnd\\src\\main\\webapp\\resources\\images\\";
 		imagePath=imagePath+String.valueOf(product.getProductId())+".jpg";
 		File image=new File(imagePath);
 		

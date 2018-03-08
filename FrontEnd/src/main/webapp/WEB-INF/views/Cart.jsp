@@ -18,7 +18,7 @@
 		<td colspan="3" >Your Cart</td>	
 	</tr>
 	<tr>
-		<td>Image</td>
+		<td></td>
 		<td>Product ID</td>
 		<td>Produt Name</td>
 		<td>Quantity </td>

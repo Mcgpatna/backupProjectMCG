@@ -1,7 +1,7 @@
 package com.niit.config;
 
-import com.niit.dao.*;
-import com.niit.model.*;
+
+
 
 import org.springframework.context.annotation.Bean;
 
@@ -15,6 +15,25 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.niit.dao.CartDAO;
+import com.niit.dao.CartDAOImplement;
+import com.niit.dao.CategoryDAO;
+import com.niit.dao.CategoryDAOImplement;
+import com.niit.dao.CustomerDAO;
+import com.niit.dao.CustomerDAOImplement;
+import com.niit.dao.OrderDetailDAO;
+import com.niit.dao.OrderDetailDAOImpl;
+import com.niit.dao.ProductDAO;
+import com.niit.dao.ProductDAOImplement;
+import com.niit.dao.SupplierDAO;
+import com.niit.dao.SupplierDAOImplement;
+import com.niit.model.Cart;
+import com.niit.model.Category;
+import com.niit.model.Customer;
+import com.niit.model.OrderDetail;
+import com.niit.model.Product;
+import com.niit.model.Supplier;
 
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 
@@ -55,6 +74,8 @@ public class DBConfig
     				factoryBuilder.addAnnotatedClass(Customer.class);
     				factoryBuilder.addAnnotatedClass(Cart.class);
     				factoryBuilder.addAnnotatedClass(Supplier.class);
+    				factoryBuilder.addAnnotatedClass(OrderDetail.class);
+    				
     				
     				factoryBuilder.addProperties(hibernateProp);  // This is the ORM mapping bridge tool for Category class object to H2 DataSource object
     				
@@ -115,6 +136,12 @@ public class DBConfig
     			    return new SupplierDAOImplement();
     		}
     		
+    		@Bean(name="orderdetailDAO")
+    		public OrderDetailDAO getorderdetailDAO()
+    		{
+    				System.out.println("+++++ Do database manipulation of Category Model as CatogoryDAO has been enabled now!! +++++");
+    			    return new OrderDetailDAOImpl();
+    		}
 //=========================================================================================================================
     		
     		@Bean(name="transTunnel")

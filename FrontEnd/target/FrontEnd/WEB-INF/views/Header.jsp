@@ -18,7 +18,7 @@
 
 <body>
 
-<!-- <center> 
+<%-- <center> 
 <a href="login">Login</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="register">Register</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="category">Category</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -28,8 +28,8 @@
 <a href="productPage">Product Page</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="aboutus">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="contactus">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
-</center>
--->
+</center> --%>
+
 <body>
 
 <nav class="navbar navbar-default">
@@ -48,7 +48,7 @@
     	</ul>
     </c:if>
     <c:if test="${sessionScope.loggedin}">
-    
+       
       <c:if test="${sessionScope.role=='ADMIN'}">
       	<ul class="nav navbar-nav">
       	<li class="active"><a href="/FrontEnd">Home</a></li>
@@ -57,6 +57,7 @@
       	<li><a href="product">Product</a></li>
       	<li><a href="contactus">Contact Us</a></li>
 	  	<li><a href="perform_logout">Logout</a>
+	  	<li><c:out value="${sessionScope.role}  ${sessionScope.username}"/> </li>
     	</ul>
        </c:if>
        <c:if test="${sessionScope.role=='USER'}">
@@ -65,6 +66,7 @@
       	<li><a href="productPage">Product Page</a></li>
 		<li><a href="contactus">Contact Us</a></li>
 	  	<li><a href="perform_logout">Logout</a>
+	  	<li><c:out value="${sessionScope.role}  ${sessionScope.username}"/> </li>
     	</ul>
        </c:if>
     </c:if>

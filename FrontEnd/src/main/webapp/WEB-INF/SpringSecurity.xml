@@ -19,9 +19,9 @@ http://www.springframework.org/schema/security
 http://www.springframework.org/schema/security/spring-security.xsd">
 
 
-<security:http auto-config="true" use-expressions="true">
-    <security:intercept-url pattern="/product/**" access="hasRole('ADMIN')"/>
-	<security:intercept-url pattern="/cart/**" access="hasRole('USER')"/>
+ <security:http auto-config="true" use-expressions="true">
+   <!--  <security:intercept-url pattern="/product/**" access="hasRole('ADMIN')"/>
+	<security:intercept-url pattern="/cart/**" access="hasRole('USER')"/> -->
 	<security:form-login login-page="/login" default-target-url="/" 
 	 login-processing-url="/perform_login" authentication-failure-url="/login"
 	authentication-success-forward-url="/login_success" />
@@ -41,5 +41,5 @@ http://www.springframework.org/schema/security/spring-security.xsd">
 			authorities-by-username-query="select username,role from customer where username=?"/>
  
 	</security:authentication-provider>
-</security:authentication-manager>
+</security:authentication-manager> 
 </beans:beans>

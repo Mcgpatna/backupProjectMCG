@@ -30,15 +30,19 @@
 		<td><img src="<c:url value="/resources/images/${cartItem.productId}.jpg"/>" style="width:50;" height="50"/>
 		</td>
 		<td>${cartItem.productId}</td>
-		<td>${cartItem.productName}</td>
-		<td>${cartItem.quantity}</td>
+		<td> ${cartItem.productName}</td>
+		<td><input type="text" name="qty" value="${cartItem.quantity}" /></td>
 		<td>${cartItem.subtotal}</td>
 		<td>
 		  <input type="submit" value="Update" class="btn-success"/>
-		  <a href="<c:url value="/deleteCartItem" class="btn btn-danger btn-block"/>">Delete</a>
+		  <a href="<c:url value="/deleteCartItem/${cartItem.cartId}"/>" class="btn btn-danger btn-block">Delete</a>
 	</tr>
 	</form>
 </c:forEach>
+<tr>
+	<td colspan="2">Grand Total</td>
+	<td colspan="2">Rs. ${grandTotal}</td>
+</tr>
 <tr>
 <td colspan="2"> <a href="<c:url value="/UserHome" />" class="btn btn-danger btn-block">Continue Shopping </a></td>
 <td colspan="2"> <a href="<c:url value="/ConfirmOrder" />" class="btn btn-danger btn-block">Check Out</a></td>

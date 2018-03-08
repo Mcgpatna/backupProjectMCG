@@ -1,16 +1,19 @@
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CustomerDAOImplement.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\ProductDAO.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Supplier.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CategoryDAOImplement.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\ProductDAOImplement.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CustomerDAO.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CartDAO.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\SupplierDAOImplement.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Product.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Category.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Cart.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CartDAOImplement.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Customer.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CategoryDAO.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\SupplierDAO.java
-K:\mcg\DT\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\config\DBConfig.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CustomerDAO.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\ProductDAOImplement.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Category.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\SupplierDAO.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\SupplierDAOImplement.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CartDAOImplement.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Cart.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CategoryDAOImplement.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\OrderDetailDAOImpl.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\OrderDetailDAO.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\ProductDAO.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Product.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CustomerDAOImplement.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\OrderDetail.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Supplier.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\config\DBConfig.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\model\Customer.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CartDAO.java
+E:\dt workspace\BackendQuickStart-JUnit-MODEL\src\main\java\com\niit\dao\CategoryDAO.java
