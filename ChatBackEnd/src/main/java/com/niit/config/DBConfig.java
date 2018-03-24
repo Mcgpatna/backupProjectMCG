@@ -17,10 +17,13 @@ import com.niit.dao.BlogDAO;
 import com.niit.dao.BlogDAOImpl;
 import com.niit.dao.ForumDAO;
 import com.niit.dao.ForumDAOImpl;
+import com.niit.dao.JobDAO;
+import com.niit.dao.JobDAOImpl;
 import com.niit.dao.UserDetailDAO;
 import com.niit.dao.UserDetailDAOImpl;
 import com.niit.model.Blog;
 import com.niit.model.Forum;
+import com.niit.model.Job;
 import com.niit.model.UserDetail;
 
 
@@ -60,6 +63,7 @@ public class DBConfig {
 			sessionFactoryBuilder.addAnnotatedClass(Blog.class); 
 			sessionFactoryBuilder.addAnnotatedClass(Forum.class);
 			sessionFactoryBuilder.addAnnotatedClass(UserDetail.class);
+			sessionFactoryBuilder.addAnnotatedClass(Job.class);
 			
 			SessionFactory sessionFactory=sessionFactoryBuilder.buildSessionFactory();
 			System.out.println(" * * * * * Session Factory Bean or better to call 'the Spring Container' has just been initalized * * * * * ");
@@ -86,6 +90,14 @@ public class DBConfig {
 			System.out.println("+++++ Do database manipulation of UserDetail Model as UserDetailDAO has been enabled now!! +++++");
 		    return new UserDetailDAOImpl();
 	}
+	
+	@Bean(name="jobDAO")
+	public JobDAO getJobDAO()
+	{
+			System.out.println("+++++ Do database manipulation of Job Model as JobDAO has been enabled now!! +++++");
+		    return new JobDAOImpl();
+	}
+	
 	@Bean
 	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory)
 	{

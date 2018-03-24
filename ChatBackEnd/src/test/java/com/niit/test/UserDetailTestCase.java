@@ -33,17 +33,17 @@ public class UserDetailTestCase {
 			    //Category category=(Category)context.getBean("category");
 	}
 
-	//@Test
+	@Test
 	public void addUserTest()
 	{
 		UserDetail user=new UserDetail();
 		
-		user.setLoginName("madhu");
-		user.setEmailId("mcg@gmail.com");
+		user.setLoginName("user1");
+		user.setEmailId("user1@gmail.com");
 		user.setAddress("Patna");
 		user.setMobileNo("123456");
 		user.setPassword("pass@123");
-		user.setRole("ADMIN");
+		user.setRole("USER");
 		user.setStatus("A");
 		user.setUserName("MadhuChanda Ghose");
 		assertTrue("Problem in inserting user deatils..",userDAO.addUserDetail(user));
